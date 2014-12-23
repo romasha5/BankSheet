@@ -3,6 +3,7 @@
  */
 package start;
 
+import java.awt.Dimension;
 import java.awt.HeadlessException;
 
 import javax.swing.JFrame;
@@ -32,9 +33,10 @@ public class Start extends JFrame {
 	 */
 	public Start(String title) throws HeadlessException {
 		super(title);
-		setSize(400, 400);
+		setPreferredSize(new Dimension(400,400));
 		setResizable(false);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		pack();
 		setLocationRelativeTo(null);
 		setVisible(true);
 		
