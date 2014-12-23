@@ -3,6 +3,7 @@
  */
 package start;
 
+import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.HeadlessException;
 
@@ -36,9 +37,15 @@ public class Start extends JFrame {
 		setPreferredSize(new Dimension(400,400));
 		setResizable(false);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setConPan(getContentPane());
 		pack();
 		setLocationRelativeTo(null);
 		setVisible(true);
+		
+	}
+
+	private void setConPan(Container contentPane) {
+		
 		
 	}
 
